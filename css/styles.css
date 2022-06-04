@@ -493,30 +493,19 @@ font-size: 16px;
 
 /*Секция преимущества*/
 
-.benefits.list {
+.benefits-list {
   display: flex;
   align-items: center;
 
   flex-wrap: wrap;
-  /*margin: -15px;*/
   gap: var(--indent);
-  
 }
 
-/*
-.benefits.list .item + .item {
-  margin-left: 30px;
-}*/
-
-.benefits.list .item {
-
-  /*width: 270px;*/
-  /*margin: 15px;*/
-
+.benefits-item {
   --items: 4;
 }
 
-.benefits.list h3 {
+.benefits-list__h3-like {
   color: var(--primary-text-color);
   text-transform: uppercase;
   font-weight: 700;
@@ -525,12 +514,12 @@ font-size: 16px;
   margin-bottom: 10px;
 }
 
-.benefits.list p{
+.benefits-list__p-like {
 color: var(--secondary-text-color);
 line-height: 1.7;
 }
 
-.benefits.top {
+.benefits-item__meta {
   display: flex;
   min-width: 100%;
   min-height: 120px ;
@@ -544,22 +533,18 @@ line-height: 1.7;
 }
 
 /*Секция услуги*/
-.services.section {
+.services-section {
   padding-top: 0px;
 }
 
-.services.list {
+.services-list {
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
 
 }
 
-/*.services.list .item + .item {
-  margin-left: 30px;
-}*/
-
-.services.list .item {
+.services-list__item {
 --items: 3;
 
 position: relative;
@@ -570,7 +555,7 @@ justify-content: center;
 
 }
 
-.services.list p {
+.services-list__p-like {
 color: var(--primary-white-color);
 text-transform: uppercase;
 font-weight: 700;
@@ -593,11 +578,11 @@ left: 0%;
 }
 
 /*Секция комнада*/
-.team.section {
+.team-section {
   background-color: var(--background-color-secondary);
 }
 
-.team.list {
+.team-list {
   display: flex;
   flex-wrap: wrap;
   
@@ -605,30 +590,20 @@ left: 0%;
 
 }
 
-.team.list .item {
+.team-list__item {
 background-color: var(--primary-white-color);
   --items: 4;
 
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
- /* padding-bottom: 30px;
-  margin-right: 30px;*/
 }
 
-/* правило не работает обнуление 4го ребенка так как соседи есть у всех .team.list .item + .item {
-margin-left: 30px;
-}*/
-
-/*.team.list .item:nth-child(4n){
-  margin-right: 0px;
-}*/
-
-.team.list h3 {
+.team-list__h3-like {
   margin-bottom: 10px;
 }
 
-.team.list h3,
-.team.list p {
+.team-list__h3-like,
+.team-list__p-like {
   text-align: center;
 }
 
@@ -640,14 +615,14 @@ margin-left: 30px;
 
 /* social icon*/
 
-.socials.list {
+.socials-list {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 16px ;
 }
 
-.socials-link {
+.socials-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -668,17 +643,17 @@ margin-left: 30px;
   transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials-item:not(:last-child){
+.socials-list__item:not(:last-child){
 margin-right: 10px;
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.socials-list__link:hover,
+.socials-list__link:focus {
   background-color: var(--accent-color);
 }
 
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
+.socials-list__link:hover .socials-icon,
+.socials-list__link:focus .socials-icon {
   fill: var(--primary-white-color);
   
 }
