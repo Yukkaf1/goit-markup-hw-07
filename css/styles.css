@@ -268,7 +268,12 @@ color: var(--accent-color);
     padding-bottom: 60px; 
 }
 
-.address-footer {
+.page-footer__container {
+  position: relative;
+  display: flex;
+}
+
+.address-block__text {
   font-style: normal;
   color: var(--primary-white-color);
   line-height: 1.7;
@@ -276,8 +281,8 @@ color: var(--accent-color);
   margin-top: 20px;
 }
 
-.mailto-footer,
-.tel-footer {
+.address-block__mailto,
+.address-block__tel {
     font-style: normal;
     color: var( --transparent-text);
     line-height: 1.75;
@@ -288,16 +293,12 @@ color: var(--accent-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mailto-footer:hover,
-.tel-footer:hover {
+.address-block__mailto:hover,
+.address-block__tel:hover {
 color: var(--accent-color);
 }
 
-.footer.container {
-  position: relative;
-  display: flex;
-  
-}
+
 
 /*Модальное окно*/
 
@@ -880,7 +881,7 @@ fill: var(--accent-color);
 
 /*Секция присоединяйтесь*/
 
-.join.box {
+.join-box {
 
 width: 206px;
 height: 80px;
@@ -888,7 +889,7 @@ height: 80px;
 margin-left: 70px;
 }
 
-.join-title {
+.join-box__title {
   color: var(--primary-white-color);
   text-transform: uppercase;
   font-weight: 700;
@@ -896,15 +897,19 @@ margin-left: 70px;
   margin-bottom: 20px;
 }
 
-.join.list {
+.join-social__list {
   display: flex;
   
   justify-content: center;
   align-items: center;
   margin-top: 16px ;
+
+  list-style: none;
+  padding: 0;
+  margin: 0; 
 }
 
-.join-link {
+.join-social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -919,7 +924,11 @@ margin-left: 70px;
   transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join-item:not(:last-child){
+.join-social__item {
+ 
+}
+
+.join-social__item:not(:last-child){
   margin-right: 10px;
   }
 
@@ -929,19 +938,18 @@ margin-left: 70px;
     transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-
-.join-link:hover,
-.join-link:focus {
+.join-social__link:hover,
+.join-social__link:focus {
     background-color: var(--accent-color);
   }
   
-.join-link:hover .join-icon,
-.join-link:focus .join-icon {
+.join-social__link:hover .join-icon,
+.join-social__link:focus .join-icon {
     fill: var(--primary-white-color);
   }
 
 /*форма футер Подпишитесь на рассылку*/
-.form.footer {
+.form-footer {
   position: absolute;
   right: 15px;
 
@@ -958,7 +966,7 @@ margin-left: 70px;
   position: relative;
 }
 
-.form-title {
+.form-footer__title {
   color: var(--primary-white-color);
   text-transform: uppercase;
   font-weight: 700;
@@ -987,7 +995,7 @@ color: rgba(255, 255, 255, 0.6);
   background-color: var(--background-color);
 }
 
-.form-input.email {
+.form-mailing__email {
 
 padding-left: 16px;
 min-width: 358px;
@@ -1001,7 +1009,7 @@ color: var(--primary-white-color);
 
 }
 
-.button.mailing {
+.form-mailing__button {
 
 display: flex;
 align-items: center;

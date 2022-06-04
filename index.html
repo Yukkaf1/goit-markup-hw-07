@@ -59,6 +59,7 @@
     </div>
     </div>   
 </header>
+
 <!--Основной раздел-->
 <main>
 <!--Hero-->
@@ -525,25 +526,25 @@
 </main>
 <!--Футер с адресным блоком-->
 <footer class="page-footer">
-  <div  class="footer container">
-    <div class="footer"> 
+  <div  class="container page-footer__container">
+    <div class="address-block"> 
     <a href="./index.html" class="logo logo--revers"><span class="logo__text logo__text--revers"> Web</span>Studio</a>
     <address class="address-footer">
-        <p class="adress-footer">г. Киев, пр-т Леси Украинки, 26 <br>
-    <a href="mailto:info@example.com" class="mailto-footer">info@example.com</a> <br>
-    <a href="tel:+380958550083" class="tel-footer">+38 (095) 855-00-83</a>
+        <p class="address-block__text">г. Киев, пр-т Леси Украинки, 26 <br>
+    <a href="mailto:info@example.com" class="address-block__mailto">info@example.com</a> <br>
+    <a href="tel:+380958550083" class="address-block__tel">+38 (095) 855-00-83</a>
 </p>
 </address>
 </div>
 
 <!--футер блок Присоединяйтесь-->
 
-     <div class="join box">
-    <h2 class="join-title">Присоединяйтесь</h2>
-    <ul class="join list">
-      <li class="join-item">
+     <div class="join-box">
+    <h2 class="join-box__title">Присоединяйтесь</h2>
+    <ul class="join-social__list">
+      <li class="join-social__item">
         <a
-          class="join-link link"
+          class="join-social__link"
           href=""
           aria-label="иконка Instagram"
         >
@@ -552,9 +553,9 @@
           </svg>
         </a>
       </li>
-      <li class="join-item">
+      <li class="join-social__item">
         <a
-          class="join-link link"
+          class="join-social__link"
           href=""
           
           aria-label="иконка Twitter"
@@ -564,9 +565,9 @@
           </svg>
         </a>
       </li>
-      <li class="join-item">
+      <li class="join-social__item">
         <a
-          class="join-link link"
+          class="join-social__link"
           href=""
           
           aria-label="иконка Facebook"
@@ -576,9 +577,9 @@
           </svg>
         </a>
       </li>
-      <li class="join-item">
+      <li class="join-social__item">
         <a
-          class="join-link link"
+          class="join-social__link"
           href=""
           
           aria-label="иконка Linkedin"
@@ -595,16 +596,16 @@
 
 <!--Форма Подпишитесь на рассылку-->
 
-<div class="form footer">
+<div class="form-footer">
 
-<p class="form-title">Подпишитесь на рассылку</p> 
+<p class="form-footer__title">Подпишитесь на рассылку</p> 
 
 <form class="form-mailing">
 
 
-<div class="imput-mailing">
+<div class="form-mailing__group">
   <input 
-  class="form-input email"
+  class="form-mailing__email"
   type="email" 
   name="mailing"
   placeholder=" "
@@ -613,8 +614,8 @@
   <label for="email" class="label-email">E-mail</label>
 </div>
 
-<div class="button-mailing">
-<button type="submit" class="button mailing">
+<div class="form-mailing__group">
+<button type="submit" class="form-mailing__button">
   <span>Подписаться</span>
   <span class="meiling-icons">
   <svg  width="24" height="24">
