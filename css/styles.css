@@ -801,18 +801,9 @@ transform: translate(-50%, -50%);
   }
 
 
-/*.section a:hover {
-    background-color: var(--background-color-secondsry);
-}*/
-
 /*Секция постоянные клиенты*/
 
-  .clients.list h3 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-
-.clients.list {
+.clients-section__list {
   display: flex;
   flex-wrap: wrap;
 
@@ -821,7 +812,13 @@ transform: translate(-50%, -50%);
  
 }
 
-.clients-link {
+  .clients.list h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+
+.clients-section__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -835,7 +832,7 @@ transform: translate(-50%, -50%);
   transition: 250ms border cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients .item:not(:last-child){
+.clients-section__item:not(:last-child){
   margin-right: 30px;
 }
 
