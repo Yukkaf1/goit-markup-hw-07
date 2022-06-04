@@ -123,18 +123,14 @@ z-index: 9;
 
   }
   
-.revers-logo {
+.logo--revers {
     color: var(--primary-white-color);
     background-color: var(--background-color);
-    font-family: Raleway,sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    font-size: 26px;
-    line-height: 1.2;
   }
 
 .logo__text {color: var(--accent-color);}
-.revers-logo span {color: var(--accent-color);}
+
+.logo__text--revers {color: var(--accent-color);}
 
 /*Site-nav* *address-nav*/
 .site-nav__link {
@@ -165,22 +161,18 @@ margin-right: 50px;
 }
 
 .site-nav__link:hover, 
-.site-nav__link:focus,
-.address-nav .link:hover,
-.address-nav .link:focus{
+.site-nav__link:focus {
 color: var(--accent-color);
 
 transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav__link.current,
-.address-nav .link.current{
+.site-nav__link--current {
 color: var(--accent-color);
-
 }
 
 
-.site-nav__link.current::after {
+.site-nav__link--current::after {
 content: "";
 display: block;
 width: 100%;
@@ -197,8 +189,8 @@ z-index: 10;
 transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav__link.current:hover::after, 
-.site-nav__link.current:focus::after
+.site-nav__link--current:hover::after, 
+.site-nav__link--current:focus::after
 {
   content: "";
   display: block;
@@ -218,8 +210,25 @@ transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
 
 /*Блок header mailto + tel*/
 
-.address-nav .link
-{color: var(--secondary-text-color);
+.address-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.address-nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.address-nav__item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.address-nav__link {
+color: var(--secondary-text-color);
 font-weight: 500;
 letter-spacing: 0.02em;
 
@@ -231,33 +240,25 @@ padding-bottom: 32px;
 transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-nav .mailto {
+.address-nav__link--mailto {
   margin-right: 50px;
 }
 
-.address-nav {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.address-nav.list {
-  display: flex;
-  align-items: center;
-
-}
-
-.link.mailto:hover, 
-.link.tel:hover {
+.address-nav__link--mailto:hover, 
+.address-nav__link--tel:hover {
   color: var(--accent-color);
-
-
 }
 
-.heder-icons {
+.address-nav-icons {
   fill: currentColor;
   margin-right: 10px;
   }
+
+.address-nav .link:hover,
+.address-nav .link:focus{
+color: var(--accent-color);
+}
+
 
 /*Футер*/
 .page-footer {
