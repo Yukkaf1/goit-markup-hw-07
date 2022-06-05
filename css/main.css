@@ -1269,7 +1269,7 @@ textarea::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-mailing__imput {
+.form-mailing__email {
   padding-left: 16px;
   min-width: 358px;
   height: 50px;
@@ -1281,8 +1281,8 @@ textarea::placeholder {
   color: var(--primary-white-color);
 }
 
-.form-mailing__imput:focus + .label-email,
-.form-mailing__imput:not(:placeholder-shown) + .label-email {
+.form-mailing__email:focus + .label-email,
+.form-mailing__email:not(:placeholder-shown) + .label-email {
   -webkit-transform: translate(-20px, -35px);
           transform: translate(-20px, -35px);
   background-color: var(--background-color);
