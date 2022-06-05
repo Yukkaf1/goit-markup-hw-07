@@ -665,7 +665,7 @@ margin-right: 10px;
   margin-bottom: 50px;
 }
 
-.portfolio-filter .item + .item{
+.portfolio-filter .portfolio-filter__item + .portfolio-filter__item {
  margin-left: 8px;
 }
 
